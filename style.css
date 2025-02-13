@@ -6,29 +6,24 @@ body {
   background-color: #f5f5f5;
   align-items: center;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 10px;
+}
+
+main {
+  width: min(800px,calc(100% - 20px));
 }
 
 h1 {
-  font-size: 24px;
+  font-size: min(24px, 5.7vw);
   font-weight: bold;
   margin-bottom: 20px;
-}
-
-/* セクション見出しのスタイル */
-h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333333;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 /* 説明文のスタイル */
 .description {
-  font-size: 16px;
+  font-size: min(16px, 4.2vw);
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 /* 太字の文字の色 */
@@ -44,11 +39,10 @@ b {
   color: #000000;
   text-decoration: none;
   border-radius: 10px;
-  padding: 15px;
-  width: 500px;
+  padding: 10px;
+  width: min(800px,calc(100% - 20px));
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  margin-bottom: 20px;
 }
 
 .link-card:hover {
@@ -56,10 +50,9 @@ b {
 }
 
 .link-card img {
-  width: 100px;
-  height: 100px;
+  width: min(100px, 18%);
   border-radius: 5px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .link-card .text {
@@ -68,25 +61,11 @@ b {
 }
 
 .link-card .text .title {
-  font-size: 18px;
+  font-size: min(18px, 4vw);
   font-weight: bold;
 }
 
 .link-card .text .subtitle {
-  font-size: 14px;
+  font-size: min(15.75px, 3.5vw);
   color: gray;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 600px) {
-  .link-card {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .link-card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-  }
 }
